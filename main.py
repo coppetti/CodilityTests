@@ -8,10 +8,7 @@ def cyclicRotation(A, K):
 
 # 2.2 OddsOccurence
 def oddOccur(A):
-    def solution(A):
-    for a in A:
-        if A.count(a)%2==1:
-            return a
+   return [a for a in A if A.count(a)%2==1][0]
     
 def main():
   binaryGap(15)
