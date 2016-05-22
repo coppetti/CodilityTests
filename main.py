@@ -20,6 +20,10 @@ def tapeEq(A):def solution(A):
     for i in range(len(A)):
         min = abs(sum(A[i:])-sum(A[:i])) if abs(sum(A[i:])-sum(A[:i]))<min else min
     return min
+# 3.3 PermMissingElem
+def permMissingElem(A):
+    A.sort()
+    return [A[i]-1 for i in range(len(A)) if A[i]<>i+1][0]
     
 def main():
   binaryGap(15)
@@ -27,3 +31,4 @@ def main():
   oddsOccur([9, 3, 9, 3, 9, 7, 9])
   frogJmp(10,85,30)
   tapeEq([3, 1, 2, 4, 3])
+  permMissingElem([2, 1, 4, 5])
