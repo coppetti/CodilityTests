@@ -26,9 +26,9 @@ def permMissingElem(A):
     return [A[i]-1 for i in range(len(A)) if A[i]<>i+1][0]
     
 def main():
-  binaryGap(15)
-  cyclicRotation([3, 8, 9, 7, 6], 3) 
-  oddsOccur([9, 3, 9, 3, 9, 7, 9])
-  frogJmp(10,85,30)
-  tapeEq([3, 1, 2, 4, 3])
-  permMissingElem([2, 1, 4, 5])
+  print "BinaryGap: ",binaryGap(15)
+  print "CyclicRotation: ",cyclicRotation([3, 8, 9, 7, 6], 3) 
+  print "OddsOccurence: ",oddsOccur([9, 3, 9, 3, 9, 7, 9])
+  print "FrogJmp: ",frogJmp(10,85,30)
+  print "TapeEquilibrium: ",tapeEq([3, 1, 2, 4, 3])
+  print "PermMissingElem: ",permMissingElem([2, 1, 4, 5])
