@@ -5,8 +5,15 @@ def binaryGap(N):
 # 2.1 CyclicRotation
 def cyclicRotation(A, K):
     return A[-K:]+A[:-K]
-    
+
+# 2.2 OddsOccurence
+def oddOccur(A):
+    def solution(A):
+    for a in A:
+        if A.count(a)%2==1:
+            return a
     
 def main():
   binaryGap(15)
   cyclicRotation([3, 8, 9, 7, 6], 3) 
+  oddsOccur([9, 3, 9, 3, 9, 7, 9])
